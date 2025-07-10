@@ -7,9 +7,35 @@
     <meta name="description" content="Advogado especialista em direito da família em Goiânia. Atendimento humanizado e soluções jurídicas eficientes para sua família.">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Local -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <span><i class="fas fa-phone"></i> (62) 99999-9999</span>
+                <span><i class="fas fa-envelope"></i> contato@adrianolisboa.com.br</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Flutuante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5562999999999?text=Olá! Gostaria de agendar uma consulta jurídica." target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Fale Conosco</span>
+        </a>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -20,19 +46,18 @@
                 <nav class="nav">
                     <ul class="nav-menu">
                         <li><a href="#inicio">Início</a></li>
-                        <li class="dropdown">
-                            <a href="#atuacao">Áreas de Atuação <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#familia">Direito da Família</a></li>
-                                <li><a href="#trabalhista">Direito Trabalhista</a></li>
-                                <li><a href="#previdenciario">Direito Previdenciário</a></li>
-                                <li><a href="#consumidor">Direito do Consumidor</a></li>
-                            </ul>
-                        </li>
                         <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
+                <div class="header-cta">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Consulta Gratuita
+                    </a>
+                </div>
                 <div class="mobile-menu-toggle">
                     <span></span>
                     <span></span>
@@ -44,23 +69,30 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
+        <div class="hero-video-background">
+            <div class="video-overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="/videos/Vídeo_de_Escritório.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos em HTML5.
+            </video>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Precisa da ajuda de um
-                        Advogado especialista
-                        em direito de família?</h1>
-                    <p>Com competência, olhar atento e humanizado, apresento soluções seguras para resolver seus interesses o mais breve possível.</p>
+                    <h1>
+                        Precisa da ajuda de um<br>
+                        <span class="hero-title-highlight">Advogado especialista</span><br>
+                        em direito de família?
+                    </h1>
+                    <p class="hero-description">
+                        Com competência, olhar atento e humanizado, apresento soluções seguras para resolver seus interesses o mais breve possível.
+                    </p>
                     <div class="hero-buttons">
-                        <a href="#contato" class="btn btn-primary">
+                        <a href="#contato" class="btn btn-primary btn-hero">
                             <i class="fab fa-whatsapp"></i>
-                            Consulta Jurídica
+                            <span>Fale com um Especialista</span>
                         </a>
-                        <a href="#atuacao" class="btn btn-secondary">Nossos Serviços</a>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://erickferrazadvogados.com.br/wp-content/uploads/2024/12/lady-justice-ULVY2VY-e1733837294437.png" alt="Justiça">
                 </div>
             </div>
         </div>
@@ -69,35 +101,59 @@
     <!-- Sobre Section -->
     <section id="sobre" class="sobre">
         <div class="container">
-            <div class="section-header">
-                <h2>Sobre o Advogado</h2>
-                <p>Conheça nossa trajetória e compromisso com a excelência jurídica</p>
-            </div>
             <div class="sobre-content">
                 <div class="sobre-image">
-                    <img src="https://erickferrazadvogados.com.br/wp-content/uploads/2024/12/logo-legalix-2.png" alt="Adriano Lisboa">
+                    <div class="sobre-image-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Adriano Lisboa">
+                        <div class="sobre-image-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>OAB/GO</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="sobre-text">
-                    <h3>Adriano Lisboa</h3>
-                    <p>Com <strong>mais de 15 anos de experiência</strong> na advocacia, o <strong>advogado Adriano Lisboa</strong> é especialista em direito da família, oferecendo soluções jurídicas personalizadas para cada caso. Seu compromisso com a ética e a excelência no atendimento o torna referência em Goiânia e em todo o Brasil.</p>
-                    <p>Adriano Lisboa tem uma sólida trajetória profissional, com um foco em <strong>atendimento humanizado</strong> e <strong>resultados eficientes</strong>. Sua expertise abrange <strong>direito da família, trabalhista, previdenciário e do consumidor</strong>, sempre buscando as melhores soluções para os seus clientes.</p>
+                    <div class="section-header">
+                        <h2>Sobre Adriano Lisboa</h2>
+                        <p>Advogado especialista com mais de 15 anos dedicados ao direito da família</p>
+                    </div>
+                    <p class="sobre-description">
+                        Com uma trajetória sólida e reconhecida na advocacia, o <strong>Dr. Adriano Lisboa</strong> 
+                        é especialista em direito da família, oferecendo soluções jurídicas personalizadas e 
+                        atendimento humanizado para cada caso.
+                    </p>
+                    <p class="sobre-description">
+                        Sua expertise abrange todas as áreas do direito familiar, desde divórcios e guarda 
+                        de filhos até inventários e mediação familiar, sempre buscando as melhores soluções 
+                        para proteger os interesses de sua família.
+                    </p>
                     
                     <div class="sobre-features">
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Experiência consolidada</span>
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Proteção Familiar</h4>
+                                <p>Defendemos os interesses da sua família com ética e transparência</p>
+                            </div>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Atuação ética</span>
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Atendimento Humanizado</h4>
+                                <p>Compreendemos suas necessidades e oferecemos suporte emocional</p>
+                            </div>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Equipe qualificada</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Transparência</span>
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Resultados Comprovados</h4>
+                                <p>98% de taxa de sucesso em casos de direito da família</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,48 +161,207 @@
         </div>
     </section>
 
-    <!-- Áreas de Atuação Section -->
-    <section id="atuacao" class="atuacao">
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
         <div class="container">
             <div class="section-header">
-                <h2>Áreas de Atuação</h2>
-                <p>Oferecemos atendimento especializado em diversas áreas do direito</p>
+                <h2>Nossos Serviços</h2>
+                <p>Especialidades jurídicas para proteger sua família e seus direitos</p>
             </div>
-            <div class="atuacao-grid">
-                <div class="atuacao-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
                     <h3>Direito da Família</h3>
-                    <p>Especialista em divórcios, guarda de filhos, pensão alimentícia, inventários e mediação familiar.</p>
-                    <a href="#familia" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <p>Divórcios, guarda de filhos, pensão alimentícia, inventários e mediação familiar com foco na harmonia familiar.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Divórcio Consensual e Litigioso</li>
+                        <li><i class="fas fa-check"></i> Guarda Compartilhada</li>
+                        <li><i class="fas fa-check"></i> Pensão Alimentícia</li>
+                        <li><i class="fas fa-check"></i> Inventário e Partilha</li>
+                    </ul>
+                    <a href="#contato" class="servico-btn">
+                        <span>Consultar</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
-                <div class="atuacao-card">
-                    <div class="card-icon">
+                <div class="servico-card">
+                    <div class="servico-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Direito Trabalhista</h3>
-                    <p>Defesa de direitos de empregados e empregadores, incluindo acidentes de trabalho e assédio moral.</p>
-                    <a href="#trabalhista" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <p>Defesa de direitos trabalhistas, incluindo demissões, assédio moral e acidentes de trabalho.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Demissão Sem Justa Causa</li>
+                        <li><i class="fas fa-check"></i> Assédio Moral</li>
+                        <li><i class="fas fa-check"></i> Horas Extras</li>
+                        <li><i class="fas fa-check"></i> Acidentes de Trabalho</li>
+                    </ul>
+                    <a href="#contato" class="servico-btn">
+                        <span>Consultar</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
-                <div class="atuacao-card">
-                    <div class="card-icon">
+                <div class="servico-card">
+                    <div class="servico-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Direito Previdenciário</h3>
-                    <p>Auxílio-doença, aposentadoria, benefícios por incapacidade e revisões de benefícios previdenciários.</p>
-                    <a href="#previdenciario" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <p>Auxílio-doença, aposentadoria e benefícios por incapacidade com máxima eficiência.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Aposentadoria por Idade</li>
+                        <li><i class="fas fa-check"></i> Aposentadoria por Tempo</li>
+                        <li><i class="fas fa-check"></i> Auxílio-Doença</li>
+                        <li><i class="fas fa-check"></i> Benefícios por Incapacidade</li>
+                    </ul>
+                    <a href="#contato" class="servico-btn">
+                        <span>Consultar</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
-                <div class="atuacao-card">
-                    <div class="card-icon">
+                <div class="servico-card">
+                    <div class="servico-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                     <h3>Direito do Consumidor</h3>
-                    <p>Defesa dos direitos do consumidor, indenizações, recall de produtos e relações de consumo.</p>
-                    <a href="#consumidor" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    <p>Defesa dos direitos do consumidor com foco em indenizações e relações de consumo.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Indenizações</li>
+                        <li><i class="fas fa-check"></i> Recall de Produtos</li>
+                        <li><i class="fas fa-check"></i> Cobranças Indevidas</li>
+                        <li><i class="fas fa-check"></i> Direitos do Consumidor</li>
+                    </ul>
+                    <a href="#contato" class="servico-btn">
+                        <span>Consultar</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que nossos clientes dizem</h2>
+                <p>Depoimentos de quem confiou em nosso trabalho</p>
+            </div>
+            <div class="depoimentos-carousel">
+                <div class="depoimento-card">
+                    <div class="depoimento-content">
+                        <div class="depoimento-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"O Dr. Adriano foi fundamental no meu processo de divórcio. Atendimento humanizado e resultados excelentes. Recomendo muito!"</p>
+                        <div class="depoimento-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Maria Silva">
+                            <div class="author-info">
+                                <h4>Maria Silva</h4>
+                                <span>Cliente desde 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-content">
+                        <div class="depoimento-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Profissionalismo e competência. Resolveu meu caso trabalhista com rapidez e eficiência. Super recomendo!"</p>
+                        <div class="depoimento-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="João Santos">
+                            <div class="author-info">
+                                <h4>João Santos</h4>
+                                <span>Cliente desde 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-content">
+                        <div class="depoimento-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Atendimento excepcional! Conseguiu minha aposentadoria em tempo recorde. Profissional de confiança."</p>
+                        <div class="depoimento-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ana Costa">
+                            <div class="author-info">
+                                <h4>Ana Costa</h4>
+                                <span>Cliente desde 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Precisa de Ajuda Jurídica?</h2>
+                    <p>Agende sua consulta gratuita e receba orientação especializada para seu caso</p>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Consulta 100% Gratuita</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Resposta em 24h</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atendimento Humanizado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-form">
+                    <form id="formContato" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telefone" placeholder="Seu telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="servico" required>
+                                <option value="">Selecione o serviço</option>
+                                <option value="familia">Direito da Família</option>
+                                <option value="trabalhista">Direito Trabalhista</option>
+                                <option value="previdenciario">Direito Previdenciário</option>
+                                <option value="consumidor">Direito do Consumidor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensagem" placeholder="Descreva brevemente seu caso" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Solicitar Consulta Gratuita</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -157,49 +372,130 @@
         <div class="container">
             <div class="section-header">
                 <h2>Entre em Contato</h2>
-                <p>Agende sua consulta jurídica e receba orientação especializada</p>
+                <p>Estamos aqui para ajudar você e sua família</p>
             </div>
             <div class="contato-content">
                 <div class="contato-info">
-                    <div class="contato-item">
+                    <div class="contato-card">
                         <div class="contato-icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contato-details">
                             <h3>Telefone</h3>
                             <p>(62) 99999-9999</p>
+                            <span>Atendimento 24h</span>
                         </div>
                     </div>
                     
-                    <div class="contato-item">
+                    <div class="contato-card">
+                        <div class="contato-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contato-details">
+                            <h3>WhatsApp</h3>
+                            <p>(62) 99999-9999</p>
+                            <span>Resposta imediata</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-card">
                         <div class="contato-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contato-details">
                             <h3>E-mail</h3>
                             <p>contato@adrianolisboa.com.br</p>
+                            <span>Resposta em 24h</span>
                         </div>
                     </div>
                     
-                    <div class="contato-item">
+                    <div class="contato-card">
                         <div class="contato-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contato-details">
+                            <h3>Escritório</h3>
+                            <p>Av. Rio Verde, 123 - Aparecida de Goiânia<br>Goiás - GO, 74900-000</p>
+                            <span>Atendimento presencial</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contato-horario">
+                    <h3>Horário de Atendimento</h3>
+                    <div class="horario-grid">
+                        <div class="horario-item">
+                            <span class="dia">Segunda a Sexta</span>
+                            <span class="horario">8h às 18h</span>
+                        </div>
+                        <div class="horario-item">
+                            <span class="dia">Sábado</span>
+                            <span class="horario">8h às 12h</span>
+                        </div>
+                        <div class="horario-item">
+                            <span class="dia">Domingo</span>
+                            <span class="horario">Plantão 24h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização Section -->
+    <section id="localizacao" class="localizacao">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Localização</h2>
+                <p>Visite nosso escritório em Aparecida de Goiânia</p>
+            </div>
+            <div class="localizacao-content">
+                <div class="mapa-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.1234567890123!2d-49.23456789012345!3d-16.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDA3JzM0LjQiUyA0OcKwMTQnMDQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="localizacao-info">
+                    <div class="localizacao-card">
+                        <div class="localizacao-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="localizacao-details">
                             <h3>Endereço</h3>
-                            <p>Rua das Palmeiras, 123 - Centro<br>Goiânia - GO, 74000-000</p>
+                            <p>Av. Rio Verde, 123<br>Aparecida de Goiânia - GO<br>74900-000</p>
                         </div>
                     </div>
                     
-                    <div class="contato-item">
-                        <div class="contato-icon">
+                    <div class="localizacao-card">
+                        <div class="localizacao-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="localizacao-details">
+                            <h3>Como Chegar</h3>
+                            <p>Próximo ao Shopping Aparecida<br>Fácil acesso pela Av. Rio Verde</p>
+                        </div>
+                    </div>
+                    
+                    <div class="localizacao-card">
+                        <div class="localizacao-icon">
                             <i class="fas fa-clock"></i>
                         </div>
-                        <div class="contato-details">
-                            <h3>Horário de Atendimento</h3>
+                        <div class="localizacao-details">
+                            <h3>Horário de Funcionamento</h3>
                             <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
                         </div>
                     </div>
+                    
+                    <a href="https://maps.google.com/?q=Av.+Rio+Verde,+Aparecida+de+Goiânia,+GO" target="_blank" class="btn btn-primary btn-mapa">
+                        <i class="fas fa-directions"></i>
+                        <span>Ver no Google Maps</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -211,7 +507,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="https://erickferrazadvogados.com.br/wp-content/uploads/2024/12/Copia_de_Logotipo_1__1_-removebg-preview-e1733859336201.png" alt="Adriano Lisboa Advogados">
+                        <img src="https://adrianolisboadvogados.com/wp-content/uploads/2025/01/MANUAL-DE-MARCA-Photoroom.webp" alt="Adriano Lisboa Advogados">
                         <div class="footer-logo-text">
                             <h3>Adriano Lisboa</h3>
                             <p>Advogados Associados</p>
@@ -226,10 +522,20 @@
                 <div class="footer-section">
                     <h3>Áreas de Atuação</h3>
                     <ul class="footer-links">
-                        <li><a href="#familia">Direito da Família</a></li>
-                        <li><a href="#trabalhista">Direito Trabalhista</a></li>
-                        <li><a href="#previdenciario">Direito Previdenciário</a></li>
-                        <li><a href="#consumidor">Direito do Consumidor</a></li>
+                        <li><a href="#servicos">Direito da Família</a></li>
+                        <li><a href="#servicos">Direito Trabalhista</a></li>
+                        <li><a href="#servicos">Direito Previdenciário</a></li>
+                        <li><a href="#servicos">Direito do Consumidor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
                     </ul>
                 </div>
                 
@@ -238,13 +544,14 @@
                     <div class="footer-contact">
                         <p><i class="fas fa-phone"></i> (62) 99999-9999</p>
                         <p><i class="fas fa-envelope"></i> contato@adrianolisboa.com.br</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Rua das Palmeiras, 123 - Centro<br>Goiânia - GO, 74000-000</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Rio Verde, 123 - Aparecida de Goiânia<br>Goiás - GO, 74900-000</p>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <p>&copy; 2024 Adriano Lisboa Advogados. Todos os direitos reservados.</p>
+                <p>OAB/GO - Especialista em Direito da Família</p>
             </div>
         </div>
     </footer>

@@ -27,12 +27,25 @@ app.use(morgan('combined'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Servir arquivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
+// Servir arquivos estáticos da pasta public
+app.use(express.static('public'));
+
+// Servir arquivos do Font Awesome
+app.use('/fontawesome', express.static(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free')));
 
 // Rota principal
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Rota para teste de ícones
+app.get('/test-icons', (req, res) => {
+    res.sendFile(path.join(__dirname, 'test-icons.html'));
+});
+
+// Rota para qualquer outra página (fallback)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
 // Rota de contato (para formulário)
@@ -60,6 +73,7 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-    console.log(`Acesse: http://localhost:${PORT}`);
+    console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+    console.log(`📱 Teste de ícones: http://localhost:${PORT}/test-icons`);
+    console.log(`📧 WhatsApp: https://wa.me/5562999999999`);
 }); 

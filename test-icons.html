@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Ícones - Font Awesome</title>
+    
+    <!-- Font Awesome - Múltiplos CDNs como fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .icon-test {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-width: 120px;
+        }
+        .icon-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #1e40af;
+        }
+        .icon-name {
+            font-size: 0.8rem;
+            text-align: center;
+            color: #666;
+        }
+        h1 {
+            color: #1e40af;
+            text-align: center;
+        }
+        .status {
+            background: #10b981;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .status.error {
+            background: #ef4444;
+        }
+        .status.warning {
+            background: #f59e0b;
+        }
+        .test-results {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .test-item:last-child {
+            border-bottom: none;
+        }
+        .test-status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .test-status.success {
+            background: #10b981;
+            color: white;
+        }
+        .test-status.error {
+            background: #ef4444;
+            color: white;
+        }
+        .test-status.warning {
+            background: #f59e0b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Ícones Font Awesome</h1>
+    
+    <div id="status" class="status">
+        🔍 Verificando carregamento dos ícones...
+    </div>
+    
+    <div class="test-results">
+        <h3>Resultados dos Testes</h3>
+        <div id="test-results"></div>
+    </div>
+    
+    <div class="icon-test">
+        <div class="icon-item">
+            <i class="fas fa-award" data-fallback="🏆"></i>
+            <span class="icon-name">fa-award</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-briefcase" data-fallback="💼"></i>
+            <span class="icon-name">fa-briefcase</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-heart" data-fallback="❤️"></i>
+            <span class="icon-name">fa-heart</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-shield-alt" data-fallback="🛡️"></i>
+            <span class="icon-name">fa-shield-alt</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-handshake" data-fallback="🤝"></i>
+            <span class="icon-name">fa-handshake</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-trophy" data-fallback="🏆"></i>
+            <span class="icon-name">fa-trophy</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-graduation-cap" data-fallback="🎓"></i>
+            <span class="icon-name">fa-graduation-cap</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-check" data-fallback="✅"></i>
+            <span class="icon-name">fa-check</span>
+        </div>
+        <div class="icon-item">
+            <i class="fab fa-whatsapp" data-fallback="📱"></i>
+            <span class="icon-name">fab fa-whatsapp</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-phone" data-fallback="📞"></i>
+            <span class="icon-name">fa-phone</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-envelope" data-fallback="📧"></i>
+            <span class="icon-name">fa-envelope</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-map-marker-alt" data-fallback="📍"></i>
+            <span class="icon-name">fa-map-marker-alt</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-clock" data-fallback="🕐"></i>
+            <span class="icon-name">fa-clock</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-car" data-fallback="🚗"></i>
+            <span class="icon-name">fa-car</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-directions" data-fallback="🧭"></i>
+            <span class="icon-name">fa-directions</span>
+        </div>
+        <div class="icon-item">
+            <i class="fas fa-chevron-up" data-fallback="⬆️"></i>
+            <span class="icon-name">fa-chevron-up</span>
+        </div>
+        <div class="icon-item">
+            <i class="fab fa-facebook" data-fallback="📘"></i>
+            <span class="icon-name">fab fa-facebook</span>
+        </div>
+        <div class="icon-item">
+            <i class="fab fa-instagram" data-fallback="📷"></i>
+            <span class="icon-name">fab fa-instagram</span>
+        </div>
+        <div class="icon-item">
+            <i class="fab fa-linkedin" data-fallback="💼"></i>
+            <span class="icon-name">fab fa-linkedin</span>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="/" style="background: #1e40af; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+            Voltar para o Site Principal
+        </a>
+    </div>
+
+    <script>
+        // Função para testar se Font Awesome carregou
+        function testFontAwesome() {
+            const status = document.getElementById('status');
+            const testResults = document.getElementById('test-results');
+            const results = [];
+            
+            // Teste 1: Verificar se as classes CSS estão disponíveis
+            const testIcon = document.createElement('i');
+            testIcon.className = 'fas fa-check';
+            testIcon.style.position = 'absolute';
+            testIcon.style.left = '-9999px';
+            document.body.appendChild(testIcon);
+            
+            const computedStyle = window.getComputedStyle(testIcon, ':before');
+            const content = computedStyle.content;
+            
+            if (content && content !== 'none' && content !== 'normal') {
+                results.push({
+                    test: 'Font Awesome CSS Carregado',
+                    status: 'success',
+                    message: '✅ CSS do Font Awesome carregou corretamente'
+                });
+            } else {
+                results.push({
+                    test: 'Font Awesome CSS Carregado',
+                    status: 'error',
+                    message: '❌ CSS do Font Awesome não carregou'
+                });
+            }
+            
+            document.body.removeChild(testIcon);
+            
+            // Teste 2: Verificar se os ícones estão visíveis
+            const iconElements = document.querySelectorAll('.icon-item i');
+            let visibleIcons = 0;
+            let totalIcons = iconElements.length;
+            
+            iconElements.forEach(icon => {
+                const rect = icon.getBoundingClientRect();
+                if (rect.width > 0 && rect.height > 0) {
+                    visibleIcons++;
+                }
+            });
+            
+            if (visibleIcons === totalIcons) {
+                results.push({
+                    test: 'Ícones Visíveis',
+                    status: 'success',
+                    message: `✅ Todos os ${totalIcons} ícones estão visíveis`
+                });
+            } else {
+                results.push({
+                    test: 'Ícones Visíveis',
+                    status: 'warning',
+                    message: `⚠️ ${visibleIcons}/${totalIcons} ícones estão visíveis`
+                });
+            }
+            
+            // Teste 3: Verificar fallbacks
+            const fallbackElements = document.querySelectorAll('[data-fallback]');
+            results.push({
+                test: 'Fallbacks Configurados',
+                status: 'success',
+                message: `✅ ${fallbackElements.length} ícones têm fallbacks configurados`
+            });
+            
+            // Exibir resultados
+            testResults.innerHTML = results.map(result => `
+                <div class="test-item">
+                    <span>${result.test}</span>
+                    <span class="test-status ${result.status}">${result.message}</span>
+                </div>
+            `).join('');
+            
+            // Atualizar status geral
+            const hasErrors = results.some(r => r.status === 'error');
+            const hasWarnings = results.some(r => r.status === 'warning');
+            
+            if (hasErrors) {
+                status.className = 'status error';
+                status.innerHTML = '❌ Font Awesome não carregou corretamente. Fallbacks serão aplicados.';
+            } else if (hasWarnings) {
+                status.className = 'status warning';
+                status.innerHTML = '⚠️ Font Awesome carregou parcialmente. Alguns ícones podem não aparecer.';
+            } else {
+                status.className = 'status';
+                status.innerHTML = '✅ Font Awesome carregou corretamente! Todos os ícones estão funcionando.';
+            }
+        }
+        
+        // Executar teste após carregamento da página
+        window.addEventListener('load', () => {
+            setTimeout(testFontAwesome, 1000);
+        });
+        
+        // Aplicar fallbacks se necessário
+        function applyFallbacks() {
+            const iconElements = document.querySelectorAll('.fa, .fas, .fab');
+            
+            iconElements.forEach(icon => {
+                const fallback = icon.getAttribute('data-fallback');
+                if (fallback) {
+                    const rect = icon.getBoundingClientRect();
+                    if (rect.width === 0 || rect.height === 0) {
+                        // Se o ícone não está visível, aplicar fallback
+                        icon.style.fontFamily = 'inherit';
+                        icon.style.fontSize = '1em';
+                        icon.textContent = fallback;
+                        icon.className = icon.className.replace(/fa[bs]? fa-[a-zA-Z-]+/g, '');
+                        icon.classList.add('icon-fallback');
+                    }
+                }
+            });
+        }
+        
+        // Aplicar fallbacks após um tempo
+        setTimeout(applyFallbacks, 2000);
+    </script>
+</body>
+</html> 

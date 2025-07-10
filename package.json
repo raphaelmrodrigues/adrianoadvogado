@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/raphaelmrodrigues/adrianoadvogado.git"
   },
-  "keywords": ["advogado", "direito-familia", "landing-page", "nodejs"],
+  "keywords": [
+    "advogado",
+    "direito-familia",
+    "landing-page",
+    "nodejs"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +25,7 @@
   },
   "homepage": "https://github.com/raphaelmrodrigues/adrianoadvogado#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "helmet": "^7.1.0",

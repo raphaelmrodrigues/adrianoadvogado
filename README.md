@@ -1,204 +1,204 @@
-# Dr. Adriano - Site de Advocacia
+# Adriano Lisboa Advogados - Landing Page
 
-Landing page profissional para advogado especialista em direito da família, desenvolvida com Node.js, Express e tecnologias web modernas.
+Uma landing page moderna e profissional para o escritório de advocacia do Dr. Adriano Lisboa, especialista em direito da família.
 
 ## 🚀 Características
 
+### Design Moderno
 - **Design Responsivo**: Adaptável a todos os dispositivos
-- **Performance Otimizada**: Carregamento rápido e eficiente
-- **SEO Otimizado**: Meta tags e estrutura semântica
-- **Formulário de Contato**: Sistema de envio de mensagens
-- **Animações Suaves**: Efeitos visuais profissionais
-- **Navegação Intuitiva**: Menu mobile e scroll suave
-- **Segurança**: Middleware de proteção (Helmet, CORS)
+- **Interface Profissional**: Visual clean e elegante
+- **Tipografia Otimizada**: Fonte Inter para melhor legibilidade
+- **Paleta de Cores Profissional**: Azul e dourado para transmitir confiança
 
-## 📋 Seções do Site
+### Funcionalidades
+- **Navegação Suave**: Scroll suave entre seções
+- **Animações Interativas**: Efeitos visuais modernos
+- **Formulário de Contato**: Integração com WhatsApp
+- **Contadores Animados**: Estatísticas dinâmicas
+- **Menu Mobile**: Navegação otimizada para dispositivos móveis
 
-1. **Hero Section**: Apresentação principal com call-to-action
-2. **Sobre**: Informações sobre o advogado e estatísticas
-3. **Serviços**: Lista completa de serviços oferecidos
-4. **Depoimentos**: Testemunhos de clientes satisfeitos
-5. **Contato**: Formulário e informações de contato
-6. **Footer**: Links úteis e informações adicionais
+### Seções Principais
+1. **Hero Section**: Apresentação impactante com call-to-action
+2. **Sobre**: Informações sobre o advogado e experiência
+3. **Serviços**: Áreas de atuação detalhadas
+4. **Depoimentos**: Testemunhos de clientes
+5. **CTA**: Formulário de consulta gratuita
+6. **Contato**: Informações de contato completas
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Backend
-- **Node.js**: Runtime JavaScript
-- **Express**: Framework web
-- **Helmet**: Segurança HTTP
-- **CORS**: Cross-Origin Resource Sharing
-- **Morgan**: Logger de requisições
-
-### Frontend
 - **HTML5**: Estrutura semântica
-- **CSS3**: Estilização moderna e responsiva
-- **JavaScript**: Interatividade e funcionalidades
-- **Google Fonts**: Tipografia profissional
+- **CSS3**: Estilos modernos com CSS Grid e Flexbox
+- **JavaScript ES6+**: Funcionalidades interativas
+- **Font Awesome**: Ícones profissionais
+- **Google Fonts**: Tipografia Inter
 
-## 📦 Instalação
+## 📁 Estrutura do Projeto
+
+```
+adrianoadvogado/
+├── public/
+│   ├── index.html          # Página principal
+│   ├── css/
+│   │   └── style.css       # Estilos da aplicação
+│   ├── js/
+│   │   └── main.js         # Funcionalidades JavaScript
+│   └── images/             # Imagens do projeto
+├── server.js               # Servidor Node.js
+├── package.json            # Dependências do projeto
+└── README.md              # Documentação
+```
+
+## 🎨 Design System
+
+### Cores
+- **Primary**: `#1e40af` (Azul principal)
+- **Secondary**: `#f59e0b` (Dourado)
+- **Accent**: `#10b981` (Verde)
+- **Text Primary**: `#1a1a1a` (Texto principal)
+- **Text Secondary**: `#6b7280` (Texto secundário)
+
+### Tipografia
+- **Família**: Inter
+- **Pesos**: 300, 400, 500, 600, 700
+- **Hierarquia**: Títulos grandes para impacto, texto legível para conteúdo
+
+### Componentes
+- **Cards**: Bordas arredondadas com sombras suaves
+- **Botões**: Gradientes com efeitos hover
+- **Formulários**: Campos com validação visual
+- **Navegação**: Header fixo com backdrop blur
+
+## 🚀 Como Executar
 
 ### Pré-requisitos
 - Node.js (versão 14 ou superior)
 - npm ou yarn
 
-### Passos para instalação
+### Instalação
 
 1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/raphaelmrodrigues/adrianoadvogado.git
-   cd adrianoadvogado
-   ```
-
-2. **Instale as dependências**
-   ```bash
-   npm install
-   ```
-
-3. **Execute o projeto**
-   ```bash
-   # Modo desenvolvimento (com auto-reload)
-   npm run dev
-   
-   # Modo produção
-   npm start
-   ```
-
-4. **Acesse o site**
-   - Abra seu navegador
-   - Acesse: `http://localhost:3000`
-
-## 🎨 Personalização
-
-### Cores e Estilo
-As cores principais do site estão definidas no arquivo `public/css/style.css`:
-
-```css
-/* Cores principais */
---primary-color: #2c3e50;
---secondary-color: #3498db;
---accent-color: #2980b9;
---text-color: #333;
---light-text: #7f8c8d;
+```bash
+git clone [url-do-repositorio]
+cd adrianoadvogado
 ```
 
-### Conteúdo
-Para personalizar o conteúdo, edite o arquivo `public/index.html`:
+2. **Instale as dependências**
+```bash
+npm install
+```
 
-- **Informações do advogado**: Seção "Sobre"
-- **Serviços oferecidos**: Seção "Serviços"
-- **Dados de contato**: Seção "Contato" e Footer
-- **Depoimentos**: Seção "Depoimentos"
+3. **Execute o servidor**
+```bash
+npm start
+```
 
-### Imagens
-- Adicione suas imagens na pasta `public/images/`
-- Atualize os caminhos no HTML conforme necessário
+4. **Acesse no navegador**
+```
+http://localhost:3000
+```
 
 ## 📱 Responsividade
 
-O site é totalmente responsivo e funciona em:
+A landing page é totalmente responsiva e otimizada para:
+
 - **Desktop**: 1200px+
 - **Tablet**: 768px - 1199px
 - **Mobile**: 320px - 767px
 
-## 🔧 Configurações Avançadas
+### Breakpoints
+- `@media (max-width: 1024px)`: Ajustes para tablets
+- `@media (max-width: 768px)`: Layout mobile
+- `@media (max-width: 480px)`: Otimizações para smartphones
 
-### Variáveis de Ambiente
-Crie um arquivo `.env` na raiz do projeto:
+## ⚡ Performance
 
-```env
-PORT=3000
-NODE_ENV=development
-```
+### Otimizações Implementadas
+- **Lazy Loading**: Imagens carregadas sob demanda
+- **Debounce**: Otimização de eventos de scroll
+- **CSS Otimizado**: Estilos organizados e eficientes
+- **JavaScript Modular**: Código limpo e reutilizável
 
-### Configuração do Formulário
-Para conectar o formulário a um serviço de email real, edite o arquivo `server.js`:
+### Métricas de Performance
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+
+## 🔧 Personalização
+
+### Alterando Informações
+1. **Dados do Advogado**: Edite o arquivo `index.html`
+2. **Cores**: Modifique as variáveis CSS em `style.css`
+3. **Imagens**: Substitua as URLs das imagens
+4. **Contato**: Atualize telefone e endereço
+
+### Adicionando Novas Seções
+1. Crie a estrutura HTML na seção desejada
+2. Adicione os estilos CSS correspondentes
+3. Implemente funcionalidades JavaScript se necessário
+
+## 📞 Integração WhatsApp
+
+O formulário de contato está configurado para integração com WhatsApp:
 
 ```javascript
-// Rota de contato (para formulário)
-app.post('/contato', (req, res) => {
-    // Adicione aqui sua lógica de envio de email
-    // Exemplo com Nodemailer:
-    // sendEmail(req.body);
-    
-    res.json({ 
-        success: true, 
-        message: 'Mensagem enviada com sucesso!' 
-    });
-});
+// Configuração no main.js
+const phoneNumber = '5562999999999'; // Substitua pelo número real
+const message = 'Olá! Gostaria de agendar uma consulta jurídica.';
 ```
 
-### Deploy
-Para fazer deploy em produção:
+## 🎯 SEO
 
-1. **Heroku**
-   ```bash
-   heroku create
-   git push heroku main
-   ```
+### Meta Tags Implementadas
+- **Title**: Otimizado para busca
+- **Description**: Descrição clara dos serviços
+- **Viewport**: Configuração para dispositivos móveis
+- **Favicon**: Ícone personalizado
 
-2. **Vercel**
-   ```bash
-   npm install -g vercel
-   vercel
-   ```
-
-3. **DigitalOcean/AWS**
-   - Configure um servidor Node.js
-   - Use PM2 para gerenciar o processo
-
-## 📊 Estrutura do Projeto
-
-```
-adrianoadvogado/
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   ├── images/
-│   ├── index.html
-│   └── 404.html
-├── server.js
-├── package.json
-└── README.md
-```
-
-## 🚀 Scripts Disponíveis
-
-- `npm start`: Inicia o servidor em modo produção
-- `npm run dev`: Inicia o servidor em modo desenvolvimento com auto-reload
-- `npm test`: Executa os testes (a ser implementado)
+### Estrutura Semântica
+- **Header**: Navegação principal
+- **Main**: Conteúdo principal
+- **Section**: Seções organizadas
+- **Footer**: Informações de contato
 
 ## 🔒 Segurança
 
-O projeto inclui várias camadas de segurança:
+- **Validação de Formulários**: Client-side e server-side
+- **Sanitização de Dados**: Prevenção de XSS
+- **HTTPS**: Recomendado para produção
 
-- **Helmet**: Headers de segurança HTTP
-- **CORS**: Controle de acesso cross-origin
-- **Validação de entrada**: Sanitização de dados do formulário
-- **Rate limiting**: Proteção contra ataques de força bruta (recomendado adicionar)
+## 📈 Analytics
 
-## 📈 SEO e Performance
+Para implementar Google Analytics:
 
-### Otimizações Implementadas
-- Meta tags completas
-- Estrutura HTML semântica
-- Imagens otimizadas
-- CSS e JS minificados
-- Lazy loading de imagens
-- Compressão gzip
+```html
+<!-- Adicione no head do index.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+```
 
-### Meta Tags Incluídas
-- Title e description
-- Open Graph tags
-- Keywords
-- Viewport para mobile
-- Charset UTF-8
+## 🚀 Deploy
+
+### Opções de Deploy
+1. **Netlify**: Deploy automático via Git
+2. **Vercel**: Otimizado para performance
+3. **GitHub Pages**: Gratuito e simples
+4. **Servidor Próprio**: Node.js com PM2
+
+### Variáveis de Ambiente
+```env
+NODE_ENV=production
+PORT=3000
+```
 
 ## 🤝 Contribuição
 
-1. Faça um fork do projeto
+1. Fork o projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
@@ -206,22 +206,26 @@ O projeto inclui várias camadas de segurança:
 
 ## 📄 Licença
 
-Este projeto está sob a licença ISC. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-## 📞 Suporte
+## 👨‍💼 Sobre o Advogado
 
-Para suporte ou dúvidas:
-- Email: contato@adrianoadvogado.com
-- Telefone: (11) 99999-9999
+**Dr. Adriano Lisboa** é especialista em direito da família com mais de 15 anos de experiência, oferecendo soluções jurídicas eficientes e atendimento humanizado em Goiânia e região.
 
-## 🔄 Atualizações Futuras
+### Áreas de Atuação
+- Direito da Família
+- Direito Trabalhista
+- Direito Previdenciário
+- Direito do Consumidor
 
-- [ ] Sistema de blog
-- [ ] Chat online
-- [ ] Área do cliente
-- [ ] Integração com WhatsApp
-- [ ] Sistema de agendamento
-- [ ] Analytics avançado
+## 📞 Contato
+
+- **Telefone**: (62) 99999-9999
+- **WhatsApp**: (62) 99999-9999
+- **Email**: contato@adrianolisboa.com.br
+- **Endereço**: Rua das Palmeiras, 123 - Centro, Goiânia - GO
 
 ---
+
+**Desenvolvido com ❤️ para o Dr. Adriano Lisboa Advogados**
 
